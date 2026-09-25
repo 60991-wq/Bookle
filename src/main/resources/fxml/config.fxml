@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.esi.prj.bookle.mvp.view.ConfigController">
+    <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+        <Image url="@../assets/background.jpeg" />
+    </ImageView>
+
+    <ProgressIndicator fx:id="loadingSpinner" layoutX="430.0" layoutY="331.0" prefHeight="42.0" prefWidth="93.0" progress="0.64" style="-fx-text-fill: white;" visible="false" />
+
+    <Label fx:id="loadingLabel" layoutX="359.0" layoutY="373.0" style="-fx-font-size: 18px; -fx-text-fill: white;" text="Chargement en cours..." visible="false" />
+
+
+    <VBox alignment="TOP_CENTER" layoutX="300.0" layoutY="387.0" prefHeight="200.0" prefWidth="300.0">
+        <children>
+         <Button fx:id="btnChooseImage" mnemonicParsing="false" onAction="#handleChooseImage" opacity="0.6" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Load" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button fx:id="btnStartGame" mnemonicParsing="false" onAction="#handleStartGame" opacity="0.6" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Start" textAlignment="CENTER">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+         </Button>
+         <Button fx:id="btnPages" mnemonicParsing="false" onAction="#handleChoosePage" opacity="0.58" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: black; -fx-border-color: white;" text="Pages existantes" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+            <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="200.0">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+                <children>
+                    <Button fx:id="btnUser" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-font-weight: bold; -fx-text-fill: yellow;" text="Utilisateur" textAlignment="RIGHT">
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor></Button>
+                    <TextField fx:id="labelPoints" maxWidth="30.0" style="-fx-background-color: transparent; -fx-text-fill: yellow; -fx-font-weight: bold;" text="..." />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+    <VBox layoutX="835.0" layoutY="466.0" prefHeight="120.0" prefWidth="50.0">
+        <children>
+            <Button fx:id="btnShowRules" mnemonicParsing="false" onAction="#handleShowRules" prefHeight="40.0" prefWidth="45.0" style="-fx-background-radius: 50%; -fx-background-color: white;" text="Help">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="10.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Button fx:id="btnExit" mnemonicParsing="false" onAction="#handleExit" prefHeight="40.0" prefWidth="45.0" style="-fx-background-radius: 50%; -fx-background-color: white;" text="Exit">
+                <font>
+                    <Font size="10.0" />
+                </font>
+                <VBox.margin>
+                    <Insets top="15.0" />
+                </VBox.margin>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </children>
+    </VBox>
+    <Label fx:id="labelRules" layoutX="200.0" layoutY="180.0" prefHeight="120.0" prefWidth="500.0" text="Commencez par choisir un utilisateur. Ensuite, vous pouvez soit scanner une nouvelle image, soit sélectionner une page déjà scannée. L'image peut être en francais, anglais, roumain, catalan et néerlandais, et elle sera automatiquement traduite en français avant de jouer. Le but du jeu est de deviner un mot de 5 lettres extrait de la page. Vous avez cinq essais pour y parvenir. Après chaque tentative, vous recevrez un retour sur les lettres bien placées et celles présentes dans le mot. Trouvez le mot en cinq tentatives ou moins pour gagner la partie." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" visible="false" wrapText="true" />
+      <Label alignment="CENTER" layoutX="344.0" layoutY="14.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-family: Papyrus; -fx-font-weight: bold;" text="Bookle">
+          <font>
+              <Font name="System Bold" size="64.0" />
+          </font>
+      </Label>
+</AnchorPane>

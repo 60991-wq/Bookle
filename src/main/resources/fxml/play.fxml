@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.esi.prj.bookle.mvp.view.PlayController">
+
+    <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+        <Image url="@../assets/background.jpeg" />
+    </ImageView>
+    <Label fx:id="messageLabel" alignment="CENTER" layoutX="213.0" layoutY="83.0" opacity="0.6" prefHeight="48.0" prefWidth="461.0" style="-fx-font-size: 18px; -fx-background-color: black; -fx-text-fill: white; -fx-padding: 10px;" text="Welcome !" />
+
+    <!-- Zone de jeu -->
+    <GridPane fx:id="gridPane" alignment="CENTER" hgap="5" layoutX="324.0" layoutY="159.0" opacity="0.7" style="-fx-text-fill: white;" vgap="5">
+        <children>
+            <VBox>
+                <HBox>
+                    <Label fx:id="cell_0_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_0_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_0_2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_0_3" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_0_4" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                </HBox>
+                <HBox>
+                    <Label fx:id="cell_1_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_1_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_1_2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_1_3" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                    <Label fx:id="cell_1_4" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+                </HBox>
+                <HBox>
+                    <Label fx:id="cell_2_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_2_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_2_2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_2_3" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_2_4" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                </HBox>
+                <HBox>
+                    <Label fx:id="cell_3_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_3_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_3_2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_3_3" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_3_4" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                </HBox>
+                <HBox>
+                    <Label fx:id="cell_4_0" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_4_1" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_4_2" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_4_3" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                    <Label fx:id="cell_4_4" alignment="CENTER" contentDisplay="CENTER" prefHeight="50" prefWidth="50" style="-fx-border-color: white; -fx-background-color: black;" textFill="WHITE" />
+                </HBox>
+            </VBox>
+        </children>
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+    </GridPane>
+
+    <!-- Champ de saisie -->
+    <TextField fx:id="inputWord" layoutX="266.0" layoutY="437.0" prefWidth="300.0" promptText="Enter a 5 letter word">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+
+    <!-- Bouton valider -->
+    <Button fx:id="btnEnter" layoutX="590.0" layoutY="437.0" opacity="0.7" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Enter">
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND" />
+      </cursor></Button>
+
+    <!-- Boutons en bas -->
+    <Button fx:id="btnReturn" layoutX="240.0" layoutY="501.0" onAction="#handleReturn" opacity="0.7" prefHeight="40.0" prefWidth="120" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="⬅" textFill="WHITE">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+    <Button fx:id="btnRestart" layoutX="390.0" layoutY="501.0" onAction="#handleRestart" opacity="0.7" prefHeight="40.0" prefWidth="120" style="-fx-text-fill: white; -fx-background-color: black; -fx-border-color: white;" text="↺" textFill="WHITE">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+    <Button fx:id="btnExit" layoutX="540.0" layoutY="501.0" onAction="#handleExit" opacity="0.7" prefHeight="40.0" prefWidth="120" style="-fx-text-fill: white; -fx-background-color: black; -fx-border-color: white;" text="X" textFill="WHITE">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+   <Label fx:id="bookLabel" contentDisplay="CENTER" layoutX="33.0" layoutY="21.0" prefHeight="27.0" prefWidth="317.0" style="-fx-font-size: 18px; -fx-text-fill: white;" text="book_title, page" textAlignment="CENTER" textFill="WHITE" />
+    <Label fx:id="scoreLabel" contentDisplay="CENTER" layoutX="733.0" layoutY="21.0" prefHeight="27.0" prefWidth="141.0" style="-fx-font-size: 18px; -fx-text-fill: white;" text="Score : 0" textAlignment="CENTER" textFill="WHITE" />
+</AnchorPane>
